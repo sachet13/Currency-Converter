@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="converter">
+        <h1>S.R. Currency Converter</h1>
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div>
+            <label for="fromCurrency">From Currency:</label>
+            <select id="fromCurrency">
+                <option value=""></option>
+                <option value="INR">INR (Indian rupee)</option>
+                <option value="USD">USD (United States doller)</option>
+                <option value="CNY">CNY (Chinese yuan)</option>
+                <option value="EUR">EUR (Euro)</option>
+                <option value="JPY">JPY (Japansese yen)</option>
+                <option value="GBP">GBP (British pound)</option>
+                <option value="AED">AED (United Arab Emirates dirham)</option>
+                <option value="AUD">AUD (Australian doller)</option>
+                <option value="CAD">CAD (Canadian doller)</option>
+                <option value="PKR">PKR (Pakistani rupee)</option>
+            </select>
+        </div>
+        <div>
+            <label for="toCurrency">To Currency:</label>
+            <select id="toCurrency">
+                <option value=""></option>
+                <option value="INR">INR (Indian rupee)</option>
+                <option value="USD">USD (United States doller)</option>
+                <option value="CNY">CNY (Chinese yuan)</option>
+                <option value="EUR">EUR (Euro)</option>
+                <option value="JPY">JPY (Japansese yen)</option>
+                <option value="GBP">GBP (British pound)</option>
+                <option value="AED">AED (United Arab Emirates dirham)</option>
+                <option value="AUD">AUD (Australian doller)</option>
+                <option value="CAD">CAD (Canadian doller)</option>
+                <option value="PKR">PKR (Pakistani rupee)</option>
+            </select>
+        </div>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="./ccscript.js"></script>
+</body>
+</html>
